@@ -21,8 +21,25 @@ html {
 }
 body {
     margin: 0;
-    font-family: Roboto, sans-serif;
+    font-family: var(--main-font);
     color: var(--main-text-color);
     font-style: normal;
     background-color: var(--fond-color);
+}
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+%centeredFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
