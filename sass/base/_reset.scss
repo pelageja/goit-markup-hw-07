@@ -1,0 +1,18 @@
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+%centeredFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

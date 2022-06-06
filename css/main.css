@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -259,12 +260,8 @@ summary {
 }
 
 :root {
-  --main-cl:#fff;
-}
-
-:root {
-  --main-font:"Roboto",sans-serif;
-  --secondary-font:"Raleway",sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --fond-color: #ffffff;
@@ -305,6 +302,12 @@ ul {
   list-style-type: none;
 }
 
+.header__container, .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -315,4 +318,34 @@ ul {
 .btn {
   font-family: inherit;
 }
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* WebStudio */
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo__dark {
+  color: var(--main-text-color);
+}
+
+.logo__light {
+  color: var(--fond-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/*Навигация сайта*/
 /*# sourceMappingURL=main.css.map */

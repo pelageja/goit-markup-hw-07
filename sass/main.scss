@@ -6,6 +6,7 @@
 // base
 @import './base/base';
 @import './base/container';
+@import './base/reset';
 
 
 // components
@@ -15,3 +16,5 @@
 
 //layouts
 @import './layouts/header';
+@import './layouts/nav';
+@import './layouts/footer';

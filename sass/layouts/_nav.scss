@@ -1,0 +1,28 @@
+.nav {
+   @extend %centeredFlex;
+}
+/* WebStudio */
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: $accent-color;
+    font-family:$secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo__dark {
+    color: $main-text-color;
+}
+
+.logo__light {
+    color: $fond-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/*Навигация сайта*/
