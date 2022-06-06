@@ -1,6 +1,7 @@
 .nav {
    @extend %centeredFlex;
 }
+
 /*Навигация сайта*/
 .site-nav {
     display: flex;
@@ -18,7 +19,7 @@
     margin-right: 0;
 }
 
-.site-nav__link {
+.site-nav__link {text-decoration: none;
     @extend %centeredFlex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -26,7 +27,7 @@
     font-size: 14px;
     line-height: 1.2;
     font-weight: 500;
-    @extend %animatingForm;
+    @include animatingForm(color);
 }
 
 .site-nav__link:hover,
@@ -37,7 +38,7 @@
 .site-nav__link--current {
     color: var(--accent-color);
     position: relative;
-@extend %animatingForm;
+@include animatingForm(color);
 
 }
 
@@ -70,7 +71,7 @@
     font-size: 14px;
     line-height: 1.2;
     font-weight: 500;
-    @extend %animatingForm;
+    @include animatingForm(color);
 }
 
 .contact__link:hover,
@@ -81,9 +82,8 @@
 .contact__icon {
     margin-right: 10px;
     fill: var(--secondary-text-color);
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@include animatingForm();
+   
 }
 
 .contact__link:hover .contact__icon,

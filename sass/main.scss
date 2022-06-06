@@ -1,6 +1,7 @@
 // utils
 @import 'utils/modern-normalize';
 @import './utils/vars';
+@import './utils/visually-hidden';
 
 
 // base
@@ -12,6 +13,12 @@
 // components
 @import './components/button';
 @import './components/logo';
+@import './components/hero';
+@import './components/features';
+@import './components/functions';
+@import './components/teammates';
+@import './components/clients';
+
 
  
 
