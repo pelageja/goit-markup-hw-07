@@ -289,6 +289,13 @@ body {
   background-color: var(--fond-color);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -302,33 +309,27 @@ ul {
   list-style-type: none;
 }
 
-.header__container, .nav {
+.header__container, .nav, .site-nav__link, .contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
+.site-nav__link, .site-nav__link--current, .contact__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn {
-  font-family: inherit;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
+/*.btn {
+    font-family: inherit;
+}*/
 /* WebStudio */
 .logo {
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--accent-color);
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -347,5 +348,91 @@ ul {
   line-height: 1.2;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /*Навигация сайта*/
+.site-nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 93px;
+  text-decoration: none;
+}
+
+.site-nav__item {
+  margin-right: 50px;
+}
+
+.site-nav__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.site-nav__link:hover,
+.site-nav__link:active {
+  color: var(--accent-color);
+}
+
+.site-nav__link--current {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.site-nav__link--current::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background: #2196f3;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+}
+
+/*Контакты*/
+.contact {
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  padding: 0;
+}
+
+.contact__item--tel {
+  margin-left: 50px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.contact__link:hover,
+.contact__link:active {
+  color: var(--accent-color);
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link:hover .contact__icon,
+.contact__link:active .contac__icon {
+  fill: var(--accent-color);
+}
 /*# sourceMappingURL=main.css.map */
