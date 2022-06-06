@@ -9,23 +9,30 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    
-    <link
+
+    <!--<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    
+    <link rel="stylesheet" href="./css/style.css" />-->
+    <link rel="stylesheet" href="./sass/utils/_modern-normalize.scss" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--шапка-->
     <header class="header">
       <div class="header__container container">
         <nav class="nav">
-          <a href="./index.html" class="logo"> Web<span class="logo__dark">Studio</span> </a>
+          <a href="./index.html" class="logo">
+            Web<span class="logo__dark">Studio</span>
+          </a>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
@@ -71,7 +78,7 @@
 
       <!--Особенности-->
       <section class="section">
-        <div class="container ">
+        <div class="container">
           <h2 class="section-title visually-hidden">Особенности</h2>
 
           <ul class="features-list">
@@ -222,7 +229,7 @@
                 height="260"
               />
               <div class="teammates__info">
-                <h3 class="teammates__name" >Ольга Репина</h3>
+                <h3 class="teammates__name">Ольга Репина</h3>
                 <p class="teammates__position">Frontend Developer</p>
                 <ul class="socials__list">
                   <li class="socials__item">
@@ -264,7 +271,7 @@
                 height="260"
               />
               <div class="teammates__info">
-                <h3 class="teammates__name" >Николай Тарасов</h3>
+                <h3 class="teammates__name">Николай Тарасов</h3>
                 <p class="teammates__position">Marketing</p>
                 <ul class="socials__list">
                   <li class="socials__item">
@@ -306,7 +313,7 @@
                 height="260"
               />
               <div class="teammates__info">
-                <h3 class="teammates__name" >Михаил Ермаков</h3>
+                <h3 class="teammates__name">Михаил Ермаков</h3>
                 <p class="teammates__position">UI Designer</p>
                 <ul class="socials__list">
                   <li class="socials__item">
@@ -397,7 +404,7 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <div class="footer__box container ">
+      <div class="footer__box container">
         <div>
           <a href="./index.html" class="footer__logo logo">
             Web<span class="logo__light">Studio</span>
@@ -419,7 +426,9 @@
                 >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="footer__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -460,9 +469,15 @@
         <div class="footer-call">
           <h3 class="footer-call__title">подпишитесь на рассылку</h3>
           <form class="footer-form">
-            <input type="email" name="user-name" class="footer-form__input" placeholder="E-mail"> 
-          
-<button  type="submit" class="footer-form__btn">Подписаться
+            <input
+              type="email"
+              name="user-name"
+              class="footer-form__input"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="footer-form__btn">
+              Подписаться
               <svg class="footer-form__btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-plane"></use>
               </svg>
@@ -471,7 +486,7 @@
         </div>
       </div>
     </footer>
-<!--Модальное окно-->
+    <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" type="button" data-modal-close>
@@ -480,55 +495,65 @@
           </svg>
         </button>
 
-<!--Форма-->
+        <!--Форма-->
 
-        <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
+        <strong class="modal__title"
+          >Оставьте свои данные, мы вам перезвоним</strong
+        >
         <form class="modal-form">
-<label class="modal-form__label">
-  Имя
-    <input type="text" name="user-name" class="modal-form__input">
-    <svg class="modal-form__icon" width="18" height="18" >
-      <use href="./images/icons.svg#icon-person-black"></use>
-    </svg>
-  
-</label>
-<label class="modal-form__label">
-   Телефон
-     <input type="tel" name="user-phone" class="modal-form__input">
-     <svg class="modal-form__icon" width="18" height="18" >
-       <use href="./images/icons.svg#icon-phone-black"></use>
-     </svg>
-   
- </label>
- <label class="modal-form__label">
-   Почта
-     <input type="email"  name="user-email" class="modal-form__input">
-     <svg class="modal-form__icon" width="18" height="18" >
-       <use href="./images/icons.svg#icon-email-black"></use>
-     </svg>
-   
- </label>
- <label class="modal-form__label modal-form__label--current">
-   Комментарий
-    <textarea class="modal-form__comment" name="user-message"  rows="5" placeholder="введите текст"></textarea>
-   </label>
-   
-   <label class="modal-form__label-agreement">
-     <input   id="user-checkbox"  class="modal-form__custom-checkbox visually-hidden" type="checkbox" name="user-checkbox">
-     <span aria-labelledby="user-checkbox" class="modal-form__checkbox">
-       <svg class="modal-form__checkbox-icon" width="16" height="15">
-         <use href="./images/icons.svg#icon-vector"></use>
-       </svg>
-     </span>
-     Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal-form__agreement-link" href="#"> Условия договора</a>
-     
-     </label>
+          <label class="modal-form__label">
+            Имя
+            <input type="text" name="user-name" class="modal-form__input" />
+            <svg class="modal-form__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label">
+            Телефон
+            <input type="tel" name="user-phone" class="modal-form__input" />
+            <svg class="modal-form__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label">
+            Почта
+            <input type="email" name="user-email" class="modal-form__input" />
+            <svg class="modal-form__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label modal-form__label--current">
+            Комментарий
+            <textarea
+              class="modal-form__comment"
+              name="user-message"
+              rows="5"
+              placeholder="введите текст"
+            ></textarea>
+          </label>
 
-     <button class=" forma-btn button" type="submit">Отправить
-     </button>
-   
+          <label class="modal-form__label-agreement">
+            <input
+              id="user-checkbox"
+              class="modal-form__custom-checkbox visually-hidden"
+              type="checkbox"
+              name="user-checkbox"
+            />
+            <span aria-labelledby="user-checkbox" class="modal-form__checkbox">
+              <svg class="modal-form__checkbox-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю&nbsp;<a
+              class="modal-form__agreement-link"
+              href="#"
+            >
+              Условия договора</a
+            >
+          </label>
+
+          <button class="forma-btn button" type="submit">Отправить</button>
         </form>
-          
       </div>
     </div>
     <script src="./js/modal.js"></script>
