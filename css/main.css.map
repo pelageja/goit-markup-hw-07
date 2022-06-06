@@ -5,7 +5,8 @@
         "../sass/main.scss",
         "../sass/utils/_vars.scss",
         "../sass/base/_base.scss",
-        "../sass/components/_button.scss"
+        "../sass/components/_button.scss",
+        "../sass/layouts/_header.scss"
     ],
     "names": [],
     "file": "main.css"

@@ -1,0 +1,28 @@
+:root {
+    --main-font:"Roboto",sans-serif;
+    --secondary-font:"Raleway",sans-serif;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --fond-color: #ffffff;
+    --fond-dark-color: #2f303a;
+    --fond-light-color: #f5f4fa;
+    --accent-color: #2196f3;
+    --accent-active-color: #188ce8;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: var(--main-text-color);
+    font-style: normal;
+    background-color: var(--fond-color);
+}
