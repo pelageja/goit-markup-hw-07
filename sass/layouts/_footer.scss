@@ -24,12 +24,12 @@ footer {
   margin: 0;
   margin-right: 0;
 }
-
 .footer__street-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.2;
   color: var(--fond-color);
+  text-decoration: none;
 }
 
 .footer__item {
@@ -37,6 +37,7 @@ footer {
 }
 
 .footer__link {
+  text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
