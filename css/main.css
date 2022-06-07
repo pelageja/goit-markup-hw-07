@@ -751,17 +751,17 @@ ul {
   background-color: var(--fond-color);
 }
 
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
 .modal__close-icon {
   fill: var(--main-text-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .modal__close-icon {
-  fill: var(--accent-color);
-  cursor: pointer;
 }
 
 /*Форма*/
@@ -894,12 +894,6 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.forma-btn {
-  display: block;
-  padding: 10px 56px;
-  margin: auto;
 }
 
 .gallery {
