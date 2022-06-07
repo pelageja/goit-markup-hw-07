@@ -27,7 +27,7 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--fond-color);
 
-  &__item:nth-child(4) {
+  &:nth-child(4) {
     margin-right: 0;
   }
 }
@@ -63,7 +63,7 @@
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  &__item:nth-child(4) {
+  &:nth-child(4) {
     margin-right: 0;
   }
 }
@@ -76,8 +76,8 @@
   color: var(--fond-color);
   @include animatingForm(background-color);
 
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
   }
 }

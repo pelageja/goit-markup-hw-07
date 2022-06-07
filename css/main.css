@@ -52,7 +52,8 @@ Sections
 body {
   margin: 0;
   /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   /* 2 */
 }
 
@@ -98,7 +99,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -180,9 +182,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -235,7 +237,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -271,7 +273,16 @@ summary {
   display: list-item;
 }
 
-.features-list__icon, .socials__list, .socials__link, .clients__link, .header__container, .nav, .site-nav__link, .contact__link, .footer-call__socials-link, .footer-form__input::placeholder {
+.features-list__icon,
+.socials__list,
+.socials__link,
+.clients__link,
+.header__container,
+.nav,
+.site-nav__link,
+.contact__link,
+.footer-call__socials-link,
+.footer-form__input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +357,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover, .button:active {
+.button:hover,
+.button:active {
   background-color: var(--accent-active-color);
 }
 
@@ -378,7 +390,11 @@ ul {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-hero.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -418,7 +434,7 @@ ul {
   width: 270px;
 }
 
-.features-list__item__item:nth-child(4) {
+.features-list__item:nth-child(4) {
   margin-right: 0;
 }
 
@@ -476,7 +492,7 @@ ul {
   position: relative;
 }
 
-.functions__item__item:nth-child(3) {
+.functions__item:nth-child(3) {
   margin-right: 0;
 }
 
@@ -526,12 +542,13 @@ ul {
 .teammates__item {
   display: block;
   margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--fond-color);
 }
 
-.teammates__item__item:nth-child(4) {
+.teammates__item:nth-child(4) {
   margin-right: 0;
 }
 
@@ -567,7 +584,7 @@ ul {
   margin-right: 10px;
 }
 
-.socials__item__item:nth-child(4) {
+.socials__item:nth-child(4) {
   margin-right: 0;
 }
 
@@ -581,7 +598,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__link__link:hover, .socials__link__link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -621,7 +639,7 @@ ul {
   margin-right: 30px;
 }
 
-.clients__item__item:nth-child(6) {
+.clients__item:nth-child(6) {
   margin-right: 0;
 }
 
@@ -835,7 +853,8 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-call__socials-link:hover, .footer-call__socials-link:focus {
+.footer-call__socials-link:hover,
+.footer-call__socials-link:focus {
   background-color: var(--accent-color);
 }
 
