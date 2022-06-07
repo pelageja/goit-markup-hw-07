@@ -28,7 +28,7 @@
     background-color: var(--fond-color);
 }
 
-.teammates__item:nth-child(4) {
+&__item:nth-child(4) {
     margin-right: 0;
 }
 
@@ -53,9 +53,7 @@
 }
 
 .socials__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @extend %centeredFlex;
     margin-top: 16px;
     padding-left: 0;
 }
@@ -67,37 +65,32 @@
     margin-right: 10px;
 }
 
-.socials__item:nth-child(4) {
+&__item:nth-child(4) {
     margin-right: 0;
 }
 
 .socials__link {
-    display: flex;
+    @extend %centeredFlex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     color: var(--fond-color);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animatingForm(background-color);
 }
 
-.socials__link:hover,
-.socials__link:focus {
+&__link:hover,
+&__link:focus {
     background-color: var(--accent-color);
 }
 
 .socials__icon {
     fill: #afb1b8;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animatingForm(fill);
+    
 }
 
 
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
+.socials__link:hover &__icon,
+.socials__link:focus &__icon {
     fill: var(--fond-color);
 }

@@ -14,7 +14,7 @@
    @include animatingForm ($background-color);
 }
 
-.button:hover,
-.button:active {
+&:hover,
+&:active {
     background-color: var(--accent-active-color);
 }
