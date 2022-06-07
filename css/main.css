@@ -896,6 +896,12 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.forma-btn {
+  display: block;
+  padding: 10px 56px;
+  margin: auto;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -946,7 +952,7 @@ ul {
 }
 
 .gallery-active .overlay-text {
-  font: Roboto;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
