@@ -1,20 +1,20 @@
 .button {
-    border-radius: 4px;
-    border-color: var(--accent-color);
-    padding: 10px 32px;
-    display: inline-block;
-    min-width: 200px;
-    color: var(--fond-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    background-color: var(--accent-color);
-    cursor: pointer;
-    letter-spacing: 0.06em;
-   @include animatingForm ($background-color);
-}
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+  color: var(--fond-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  @include animatingForm(background-color);
 
-&:hover,
-&:active {
+  &:hover,
+  &:active {
     background-color: var(--accent-active-color);
+  }
 }
